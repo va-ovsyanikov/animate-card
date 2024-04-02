@@ -58,9 +58,6 @@ main {
     position: fixed;
     bottom: -63px;
     column-gap: 1rem;
-    /* grid-template-columns:
-      minmax(64px, 100px) minmax(115px, 185px) minmax(115px, 185px) minmax(115px, 185px)
-      minmax(64px, 100px); */
   }
   .btn_down {
     margin-left: 10px;
@@ -72,7 +69,7 @@ main {
 @media screen and (max-width: 580px) {
   main {
     padding: 0 2rem;
-    grid-template-columns: minmax(110px, 185px) minmax(110px, 185px) minmax(110px, 185px);
+    grid-template-columns: minmax(110px, 1fr) minmax(110px, 1fr) minmax(110px, 1fr);
   }
   .btn_down,
   .btn_up {
