@@ -26,7 +26,7 @@ const isActive = ref(false)
 main {
   display: grid;
   grid-template-columns:
-    minmax(64px, 90px) minmax(113px, 185px) minmax(113px, 185px) minmax(113px, 185px)
+    minmax(64px, 90px) repeat(3, minmax(113px, 185px))
     minmax(64px, 90px);
   justify-content: center;
   align-items: center;
@@ -69,7 +69,7 @@ main {
 @media screen and (max-width: 580px) {
   main {
     padding: 0 2rem;
-    grid-template-columns: minmax(110px, 1fr) minmax(110px, 1fr) minmax(110px, 1fr);
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
   }
   .btn_down,
   .btn_up {
